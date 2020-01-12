@@ -1,5 +1,3 @@
-# COyou
-
 ![](https://github.com/nw-hacks2020/c-o-you/blob/master/COyou_logo.png?raw=true)
 
 by Napat Karnsakultorn, Serena Huang, Ben Henaghan, Chad Malla
