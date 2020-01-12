@@ -140,9 +140,10 @@ public class MainActivity extends AppCompatActivity {
                             String txt = line.getText();
                             txt = txt.replaceAll("\\d", "");
                             txt = txt.replaceAll("\\.", "");
+                            txt = txt.replaceAll("\\$", "");
                             Log.i(TAG, "onActivityResult: txt =" + txt);
                             if (txt.length() > 6) {
-                                textBlocks.add(line.getText());
+                                textBlocks.add(txt);
                             }
                         }
                     }

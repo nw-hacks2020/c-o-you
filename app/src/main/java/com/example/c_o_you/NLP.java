@@ -1,5 +1,7 @@
 package com.example.c_o_you;
 
+import android.util.Pair;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -22,7 +24,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class NLP {
-    public static double getIngredients(String term) throws Exception {
+    public static Pair<Double, String[]> getIngredients(String term) throws Exception {
         Map<String, Double> map = new HashMap<String, Double>();
         map.put("PORK", 4.621484423);
         map.put("CHICKEN", 3.262298031);
@@ -57,31 +59,31 @@ public class NLP {
         map.put("CHOCOLATE", 6.856879104);
         map.put("CHIPS", 2.89291368);
         map.put("ICE_CREAM", 4.281456556);
-        map.put("MINERAL WATER", 0.277240578);
+        map.put("MINERAL_WATER", 0.277240578);
         map.put("SODA", 0.40582548);
         map.put("ONION", 0.381612481);
         map.put("SALMON", 6.065231518);
 
         String TERM = term.toUpperCase();
 
-        if (TERM == "FRUIT SALAD") {
+        if (TERM.equals("FRUIT SALAD")) {
             double fruitSaladTotal = map.get("APPLE") + map.get("BANANA") + map.get("STRAWBERRY") + map.get("YOGURT");
-            return fruitSaladTotal;
-        } else if (TERM == "HASH BROWNS") {
+            return new Pair<>(fruitSaladTotal, new String[]{"Apple", "Banana", "Strawberry", "Yogurt"});
+        } else if (TERM.equals("HASH BROWNS")) {
             double hashTotal = map.get("POTATO") + map.get("OLIVE_OIL") + map.get("ONION");
-            return hashTotal;
+            return new Pair<>(hashTotal, new String[]{"Potato", "Olive Oil", "Onion"});
         }
         String _TERM = TERM.replaceAll(" ", "_");
 
         if (map.get(_TERM) != null) {
-//            return map.get(_TERM);
+            return new Pair<>(map.get(_TERM), null);
         }
         String[] TERMArr = TERM.split(" ", 0);
         double termSum = 0;
         for (int i = 0; i < TERMArr.length; i++){
             if (map.get(TERMArr[i]) != null){
                 termSum += map.get(TERMArr[i]);
-                return termSum;
+                return new Pair<>(termSum, null);
 //                return map.get(TERMArr[i]);
             }
         }
@@ -136,9 +138,9 @@ public class NLP {
                     JSONObject entity = (JSONObject)entities.get(i);
                     String NLPTerm = (String)entity.get("name");
                     String NLPTERM = NLPTerm.toUpperCase();
-                    if (NLPTERM == "GRANOLA") {
+                    if (NLPTERM.equals("GRANOLA")) {
                         NLPTermArr[i] = "OATS";
-                    } else if (NLPTerm == "CROISSANTS") {
+                    } else if (NLPTerm.equals("CROISSANTS")) {
                         NLPTermArr[i] = "PASTRY";
                     } else {
                         NLPTermArr[i] = NLPTERM;
@@ -155,7 +157,7 @@ public class NLP {
                 }
             }
             if (NLPTermSum > 0) {
-                return NLPTermSum;
+                return new Pair<>(NLPTermSum, null);
             }
 
 
@@ -168,12 +170,12 @@ public class NLP {
                 }
             }
             if (FDCTermSum > 0) {
-                return FDCTermSum;
+                return new Pair<>(FDCTermSum, ingredients);
             }
 //            System.out.println(response.toString());
         } else {
 //            System.out.println("POST NOT WORKED");
-            return 0;
+            return null;
         }
 
 //        byte[] out = "{\\\"encodingType\\\": \\\"UTF8\\\",\\\"document\\\": {\\\"type\\\": \\\"PLAIN_TEXT\\\",\\\"content\\\": \\\"granola and yogurt\\\"}}" .getBytes(StandardCharsets.UTF_8);
@@ -239,6 +241,6 @@ public class NLP {
 //        } catch (FileNotFoundException e) {
 //            e.printStackTrace();
 //        }
-        return 0;
+        return null;
     }
 }

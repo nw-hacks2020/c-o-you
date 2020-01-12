@@ -30,7 +30,7 @@ public class ResultsActivity extends AppCompatActivity {
 
         List<ResultItem> results = new ArrayList<>();
         for (String block: blocks) {
-            results.add(new ResultItem(block, new String[]{"a, b"}, 1.02f));
+            results.add(new ResultItem(block));
         }
 
         ResultItemAdapter resultItemAdapter = new ResultItemAdapter(getApplicationContext(), results);
