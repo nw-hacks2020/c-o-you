@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "522378582466",
+    "firebase_url": "https://c-o-you.firebaseio.com",
+    "project_id": "c-o-you",
+    "storage_bucket": "c-o-you.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522378582466:android:1cd15f06c31cff1ec91e5b",
+        "android_client_info": {
+          "package_name": "com.example.c_o_you"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522378582466-3b31kb1chp3f763io1tcivmaml9iskhe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeqztPTwLLGbKpCzk_Clab_kMleOIpcBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "522378582466-3b31kb1chp3f763io1tcivmaml9iskhe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
