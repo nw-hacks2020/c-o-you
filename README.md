@@ -43,3 +43,4 @@ We used Android Studio, Google Firebase, Google NLP API, and an enthusiasm for f
 1. [Determining the climate impact of food for use in a climate tax—design of a consistent and transparent model](https://link.springer.com/article/10.1007/s11367-019-01597-8#Sec24)
 2. [Carbon Footprint Factsheet](http://css.umich.edu/factsheets/carbon-footprint-factsheet)
 3. [Climate change food calculator: What's your diet's carbon footprint?](https://www.bbc.com/news/science-environment-4645971)
+4. [USDA Food Data Central API](https://fdc.nal.usda.gov/index.htm)
