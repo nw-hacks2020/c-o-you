@@ -131,7 +131,15 @@ public class MainActivity extends AppCompatActivity {
                     List<FirebaseVisionText.TextBlock> blocklist = firebaseVisionText.getTextBlocks();
                     ArrayList<String> textBlocks = new ArrayList<>();
                     for (FirebaseVisionText.TextBlock block: blocklist) {
-                        textBlocks.add(block.getText());
+                        for (FirebaseVisionText.Line line: block.getLines()) {
+                            String txt = line.getText();
+                            txt = txt.replaceAll("\\d", "");
+                            txt = txt.replaceAll("\\.", "");
+                            Log.i(TAG, "onActivityResult: txt =" + txt);
+                            if (txt.length() > 6) {
+                                textBlocks.add(line.getText());
+                            }
+                        }
                     }
 
                     Bundle bundle = new Bundle();

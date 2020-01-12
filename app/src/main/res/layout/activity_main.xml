@@ -78,6 +78,9 @@
         android:padding="15dp"
         android:background="@drawable/circularbackground"
         android:elevation="8dp"
+
+        android:backgroundTint="@color/colorAccent"
+        android:backgroundTintMode="add"
         />
 
     <TextView
