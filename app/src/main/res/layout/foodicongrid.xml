@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/foodicons"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="20000dp">
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/cookie"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/apple"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/bacon"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/fish"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/hotdog"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/ramen"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/turkey_leg"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/sandwich"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/wine"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/kebab"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/icecream"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/donut"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/burger"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/chips"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/meat"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/pizza"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/cookie"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/apple"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/bacon"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/fish"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/hotdog"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/ramen"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/turkey_leg"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/sandwich"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/wine"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:tint="@color/colorPrimaryDarkDark"
+        android:src="@drawable/kebab"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/icecream"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/donut"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/burger"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/chips"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/meat"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/foodiconsize"
+        android:layout_height="@dimen/foodiconsize"
+        android:layout_margin="@dimen/foodiconmargin"
+        android:src="@drawable/pizza"
+        />
+
+</LinearLayout>
