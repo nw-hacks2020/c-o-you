@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 public class FDC {
 
-    public static void getMenuItemID(String term) throws Exception {
+    public static void getIngredients(String term) throws Exception {
         StringBuilder result = new StringBuilder();
         String formattedTerm = term.replaceAll(" ", "%20");
         URL url = new URL("https://api.nal.usda.gov/fdc/v1/search?api_key=uM2ndaOlQYzFPO74HfjZzoppSsnVoLL03Lw7BoAA&generalSearchInput=" + formattedTerm);
