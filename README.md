@@ -1,7 +1,9 @@
 # COyou
 
 by Napat Karnsakultorn, Serena Huang, Ben Henaghan, Chad Malla
+
 University of British Columbia 
+
 NWHacks 2020 
 
 ## The Idea Behind the App
