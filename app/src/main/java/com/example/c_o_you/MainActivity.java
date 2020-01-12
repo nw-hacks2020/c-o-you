@@ -31,7 +31,9 @@ import com.google.firebase.ml.vision.common.FirebaseVisionImageMetadata;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
 import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -117,16 +119,31 @@ public class MainActivity extends AppCompatActivity {
                                                        matrix,
                                                        true);
 
-            preview.setVisibility(View.VISIBLE);
-            preview.setImageBitmap(rotatedBitmap);
+//            preview.setVisibility(View.VISIBLE);
+//            preview.setImageBitmap(rotatedBitmap);
             // Do the OCR
             FirebaseVisionImage firebaseImage = FirebaseVisionImage.fromBitmap(rotatedBitmap);
             FirebaseVisionTextRecognizer detector = FirebaseVision.getInstance()
                                                                   .getOnDeviceTextRecognizer();
             detector.processImage(firebaseImage).addOnSuccessListener(firebaseVisionText -> {
-                Toast.makeText(MainActivity.this, "OCR done", Toast.LENGTH_SHORT).show();
-                String resulttext = firebaseVisionText.getText();
-                Log.i(TAG, "onActivityResult: " + firebaseVisionText.getText());
+//                Toast.makeText(MainActivity.this, "OCR done", Toast.LENGTH_SHORT).show();
+                if (firebaseVisionText.getText().length() > 0) {
+                    List<FirebaseVisionText.TextBlock> blocklist = firebaseVisionText.getTextBlocks();
+                    ArrayList<String> textBlocks = new ArrayList<>();
+                    for (FirebaseVisionText.TextBlock block: blocklist) {
+                        textBlocks.add(block.getText());
+                    }
+
+                    Bundle bundle = new Bundle();
+                    bundle.putStringArrayList("BLOCKS", textBlocks);
+                    Intent resultsIntent = new Intent(getBaseContext(), ResultsActivity.class);
+                    resultsIntent.putExtras(bundle);
+                    startActivity(resultsIntent);
+                } else {
+                    Toast.makeText(this,
+                                   "No text found, please try again",
+                                   Toast.LENGTH_LONG).show();
+                }
 //                Paint paint = new Paint();
 //                paint.setStyle(Paint.Style.STROKE);
 //                paint.setFilterBitmap(true);
