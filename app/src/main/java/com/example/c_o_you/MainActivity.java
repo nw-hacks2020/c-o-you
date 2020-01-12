@@ -12,6 +12,9 @@ import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Matrix;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -19,7 +22,14 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.google.firebase.ml.vision.FirebaseVision;
+import com.google.firebase.ml.vision.common.FirebaseVisionImage;
+import com.google.firebase.ml.vision.common.FirebaseVisionImageMetadata;
+import com.google.firebase.ml.vision.text.FirebaseVisionText;
+import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
 
 import java.util.Arrays;
 
@@ -39,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.iconlayout)
     View foodIconlayout;
+
+    @BindView(R.id.preview)
+    ImageView preview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +106,41 @@ public class MainActivity extends AppCompatActivity {
             assert extras != null;
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             Toast.makeText(this, "got image", Toast.LENGTH_SHORT).show();
+
+            Matrix matrix = new Matrix();
+            matrix.postRotate(90);
+            Bitmap rotatedBitmap = Bitmap.createBitmap(imageBitmap,
+                                                       0,
+                                                       0,
+                                                       imageBitmap.getWidth(),
+                                                       imageBitmap.getHeight(),
+                                                       matrix,
+                                                       true);
+
+            preview.setVisibility(View.VISIBLE);
+            preview.setImageBitmap(rotatedBitmap);
+            // Do the OCR
+            FirebaseVisionImage firebaseImage = FirebaseVisionImage.fromBitmap(rotatedBitmap);
+            FirebaseVisionTextRecognizer detector = FirebaseVision.getInstance()
+                                                                  .getOnDeviceTextRecognizer();
+            detector.processImage(firebaseImage).addOnSuccessListener(firebaseVisionText -> {
+                Toast.makeText(MainActivity.this, "OCR done", Toast.LENGTH_SHORT).show();
+                String resulttext = firebaseVisionText.getText();
+                Log.i(TAG, "onActivityResult: " + firebaseVisionText.getText());
+//                Paint paint = new Paint();
+//                paint.setStyle(Paint.Style.STROKE);
+//                paint.setFilterBitmap(true);
+//                paint.setDither(true);
+//                paint.setStrokeWidth(20f);
+//                paint.setColor(0x1b03a3);
+//
+//                Canvas c = new Canvas(rotatedBitmap);
+//                for (FirebaseVisionText.TextBlock textblock : firebaseVisionText.getTextBlocks()) {
+//                    Log.i(TAG, "onActivityResult: drawing rect");
+//                    c.drawRect(textblock.getBoundingBox(), paint);
+//                }
+//                preview.draw(c);
+            });
         }
     }
 }
