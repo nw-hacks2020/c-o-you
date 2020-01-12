@@ -3,13 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDarkDark"
     tools:context=".ResultsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Known Menu Items"
+        android:textColor="@color/offwhite"
+        android:textStyle="bold"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="12dp"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="42sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/offwhite"
+        android:padding="12dp"
+        android:textSize="24sp"
+        android:text="Carbon values are shown in KG of CO2 for each kilogram/liter of food consumed"
+        android:elevation="8dp"/>
 
     <ListView
         android:id="@+id/results_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:padding="12dp"
         android:background="@color/colorPrimaryDarkDark" />
 
 

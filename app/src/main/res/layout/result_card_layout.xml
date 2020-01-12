@@ -9,50 +9,79 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="216dp"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="12dp"
+        android:layout_marginBottom="12dp"
         android:layout_gravity="center">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimaryDark"
-            android:padding="12dp"
+            android:padding="18dp"
             >
 
             <TextView
                 android:id="@+id/dish_title"
                 android:layout_width="match_parent"
-                android:layout_height="72dp"
+                android:layout_height="38dp"
                 android:maxLines="1"
                 android:layout_toLeftOf="@id/dish_co2"
-                android:textColor="@color/offwhite"
                 android:textStyle="bold"
                 android:autoSizeTextType="uniform"
-                android:autoSizeMaxTextSize="42sp"
-                android:autoSizeMinTextSize="24sp" />
+                android:autoSizeMaxTextSize="28sp"
+                android:autoSizeMinTextSize="16sp" />
 
             <TextView
                 android:id="@+id/dish_ingredients"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/offwhite"
                 android:autoSizeMaxTextSize="32sp"
                 android:autoSizeMinTextSize="16sp"
                 android:layout_below="@id/dish_title" />
 
             <TextView
                 android:id="@+id/dish_co2"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:background="@drawable/circularbackground"
                 android:gravity="center"
                 android:text="2.03KG"
-                android:backgroundTint="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/offwhite"
+                android:backgroundTint="@color/colorAccent"
                 android:backgroundTintMode="src_over"
                 android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@id/dish_ingredients"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/dish_co2">
+                    <TextView
+                        android:id="@+id/label_equiv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/dish_title"
+                        android:text="Equivalent to:"
+                        />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/car"/>
+                <TextView
+                    android:id="@+id/dish_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

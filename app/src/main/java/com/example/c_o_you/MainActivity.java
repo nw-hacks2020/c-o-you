@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             Bundle extras = data.getExtras();
             assert extras != null;
             Bitmap imageBitmap = (Bitmap) extras.get("data");
-            Toast.makeText(this, "got image", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "got image", Toast.LENGTH_SHORT).show();
 
             Matrix matrix = new Matrix();
             matrix.postRotate(90);
@@ -140,9 +140,10 @@ public class MainActivity extends AppCompatActivity {
                             String txt = line.getText();
                             txt = txt.replaceAll("\\d", "");
                             txt = txt.replaceAll("\\.", "");
+                            txt = txt.replaceAll("\\$", "");
                             Log.i(TAG, "onActivityResult: txt =" + txt);
                             if (txt.length() > 6) {
-                                textBlocks.add(line.getText());
+                                textBlocks.add(txt);
                             }
                         }
                     }
