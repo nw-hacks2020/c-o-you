@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             Bundle extras = data.getExtras();
             assert extras != null;
             Bitmap imageBitmap = (Bitmap) extras.get("data");
-            Toast.makeText(this, "got image", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "got image", Toast.LENGTH_SHORT).show();
 
             Matrix matrix = new Matrix();
             matrix.postRotate(90);
