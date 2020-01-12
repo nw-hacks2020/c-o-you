@@ -1,287 +1,84 @@
-,product_name,to_retail_gate
-0,PORK MEAT,Per kg carcass weight
-1,Average ,4.621484423
-6,CHICKEN MEAT,Per kg carcass weight
-7,Average ,3.262298031
-11,EGGS,Per kg with shell
-12,Average ,2.526441574
-15,BEEF,Per kg carcass weight
-16,Average ,23.80216746
-0,PASTEURIZED MILK (3% FAT),Per kg pasteurized milk
-1,Average,1.36935455
-2,BUTTER (82% FAT),Per kg butter
-3,Average ,12.66705193
-7,YOGURT (3% FAT),Per kg yogurt
-8,Average ,1.538219779
-11,CREAM (40% FAT),Per kg cream
-12,Average ,6.469371749
-15,HARD CHEESE (38% FAT),Per kg hard cheese
-16,Average ,12.56486777
-21,DESSERT CHEESE (25% FAT),Per kg dessert cheese
-22,Average ,8.363223794
-27,CRÈME FRAICHE (34% FAT),Per kg cr√®me fraiche
-28,Average ,5.710089322
-31,MILK POWDER,Per kg milk powder
-32,Average ,11.7851491
-,,
-,,
-,,
-1,SALMON,Per kg edible weight
-2,Norway,6.065231518
-3,COD,Per kg edible weight
-4,Average ,7.29340867
-,,
-,,
-7,ROE (FROM COD FISH),Per kg edible weight
-8,Average ,2.005864863
-,,
-,,
-11,HERRING,Per kg edible weight
-12,Average ,1.137124466
-,,
-,,
-15,MACKEREL,Per kg edible weight
-16,Average ,1.035272146
-,,
-,,
-,,
-20,SAITHE,Per kg edible weight
-21,Average ,4.900359303
-,,
-,,
-,,
-,,
-26,NORTHERN PRAWN,Per kg edible weight
-27,Norway and Denmark,14.44294447
-28,ALASKA POLLOCK,Per kg edible weight
-29,United States,3.376893088
-30,RAINBOW TROUT,Per kg edible weight
-31,Sweden,6.10321773
-32,PANGASIUS,Per kg edible weight
-33,Vietnam,13.86612846
-34,EUROPEAN PLAICE,Per kg edible weight
-35,Average ,23.28046736
-,,
-,,
-38,HOKI,Per kg edible weight
-39,Average ,7.148932597
-,,
-,,
-,,
-,,
-2,WHEAT,Per kg milled wheat
-3,Average of winter wheat and spring wheat,1.176855587
-,,
-,,
-6,RYE,Per kg milled rye
-7,Sweden,1.062139839
-8,BARLEY,Per kg milled barley
-9,Average of winter barley and spring barley,1.149947423
-,,
-,,
-12,OATS,Per kg milled oats
-13,Sweden,1.184860243
-14,RICE,Per kg milled rice
-15,Average,3.579564355
-,,
-,,
-,,
-19,RAPESEED/RAPESEED OIL,Per liter rapeseed oil
-20,Average,2.373003323
-,,
-,,
-,,
-24,OLIVE/OLIVE OIL,Per liter olive oil
-25,Average,4.044846694
-,,
-,,
-,,
-,,
-30,SUGAR BEET/SUGAR,Per kg sugar
-31,Sweden,1.523165461
-0,TOMATO,Per kg tomato
-1,Average,1.493989349
-,,
-,,
-,,
-,,
-,,
-,,
-8,CUCUMBER,Per kg cucumber
-9,Average,0.734100042
-,,
-,,
-,,
-,,
-,,
-,,
-16,BELL PEPPER,Per kg bell pepper
-17,Average,2.333728229
-,,
-,,
-,,
-,,
-,,
-23,ICEBERG LETTUCE,Per kg iceberg lettuce
-24,Average,0.322647658
-,,
-,,
-,,
-28,POTATO,Per kg potato
-29,Average,0.375638513
-,,
-,,
-,,
-33,CARROT,Per kg carrot
-34,Average,0.298370864
-,,
-,,
-37,ONION,Per kg onion
-38,Average,0.381612481
-,,
-,,
-,,
-42,LEEK,Per kg leek
-43,Average,0.395561437
-,,
-,,
-,,
-47,BROCCOLI,Per kg broccoli
-48,Average,0.627874827
-,,
-,,
-,,
-52,WHITE CABBAGE,Per kg white cabbage
-53,Average,0.359012096
-,,
-,,
-,,
-57,CAULIFLOWER,Per kg cauliflower
-58,Average,0.531403532
-,,
-,,
-,,
-,,
-63,PEAS,Per kg peas
-64,Sweden,0.617573225
-65,BEANS,Per kg beans
-66,Average,1.159890391
-,,
-,,
-,,
-0,APPLE,Per kg apple
-1,Average,0.36967267
-,,
-,,
-,,
-5,PEAR,Per kg pear
-6,Average,0.399295468
-,,
-,,
-,,
-,,
-11,MELON,Per kg melon
-12,Average,2.141240029
-,,
-,,
-,,
-,,
-17,BANANA,Per kg banana
-18,Average,0.67261454
-,,
-,,
-,,
-,,
-23,ORANGE,Per kg orange
-24,Average,0.728614353
-,,
-,,
-27,LEMON,Per kg lemon
-28,Average,0.45637194
-,,
-,,
-31,AVOCADO,Per kg avocado
-32,World average,1.093448343
-33,KIWIFRUIT,Per kg kiwifruit
-34,Average,0.632535203
-,,
-,,
-37,STRAWBERRY,Per kg strawberry
-38,Average,0.73858763
-,,
-,,
-,,
-,,
-43,RASPBERRY,Per kg raspberry
-44,Average,0.759482
-,,
-,,
-,,
-,,
-49,COCOA POWDER,Per kg cocoa powder
-50,Ivory Coast,4.437154929
-51,COCOA BUTTER,Per kg cocoa butter
-52,Ivory Coast,8.786018448
-53,COFFEE,Per kg milled coffee
-54,Average,6.406229764
-,,
-,,
-0,PASTA,Per kg pasta
-1,Average ,1.76571932
-,,
-,,
-,,
-5,BUNS,Per kg buns
-6,Sweden,1.447764517
-7,BISCUITS,Per kg biscuits
-8,Sweden,1.104275024
-9,PASTRY,Per kg pastry
-10,Sweden,1.409857661
-11,RUSKS,Per kg rusks
-12,Sweden,1.433832349
-13,WHEAT BREAD,Per kg wheat bread
-14,Sweden,1.02194756
-15,WHEAT-RYE BREAD,Per kg wheat-rye bread
-16,Sweden,1.043072702
-17,CRISP BREAD,Per kg crisp bread
-18,Sweden,1.114347356
-19,FOLLOW-UP FORMULA,Per kg follow-up formula (powder)
-20,Sweden,3.658963493
-21,MARGARINE,Per kg margarine
-22,Sweden,2.417283753
-23,LOW FAT MARGARINE,Per kg low fat margarine
-24,Sweden,1.272289192
-25,COCOA DRINK POWDER,Per kg cocoa drink powder
-26,Sweden,2.303386124
-27,SODA,Per liter soda
-28,Sweden,0.40582548
-29,CIDER (NON-ALCOHOLIC),Per liter cider
-30,Sweden,0.477932217
-31,BEER (REGULAR),Per liter beer
-32,Average ,0.461326355
-,,
-,,
-,,
-36,MINERAL WATER,Per liter mineral water
-37,Average ,0.277240578
-,,
-,,
-,,
-41,JUICE (AVERAGE),Per liter juice 
-42,Sweden,1.239805883
-43,ORANGE JUICE,Per liter orange juice
-44,Sweden,1.687789075
-45,APPLE JUICE,Per liter apple juice
-46,Sweden,0.791822691
-47,SQUASH DRINK (AVERAGE),Per liter squash drink
-48,Sweden,1.27361569
-49,STRAWBERRY SQUASH DRINK,Per liter strawberry squash drink
-50,Sweden,1.244180357
-51,RASPBERRY SQUASH DRINK,Per liter raspberry squash drink
-52,Sweden,1.303051023
-53,MILK CHOCOLATE,Per kg milk chocolate
-54,Sweden,6.856879104
-55,POTATO CRISPS,Per kg potato crisps
-56,Sweden,2.89291368
-57,ICE CREAM (DAIRY-BASED),Per kg ice cream
-58,Sweden,4.281456556
+product_name,to_retail_gate
+PORK MEAT,4.621484423
+CHICKEN MEAT,3.262298031
+EGGS,2.526441574
+BEEF,23.80216746
+PASTEURIZED MILK (3% FAT),1.36935455
+BUTTER (82% FAT),12.66705193
+YOGURT (3% FAT),1.538219779
+CREAM (40% FAT),6.469371749
+HARD CHEESE (38% FAT),12.56486777
+DESSERT CHEESE (25% FAT),8.363223794
+CRÈME FRAICHE (34% FAT),5.710089322
+MILK POWDER,11.7851491
+SALMON,6.065231518
+COD,7.29340867
+ROE (FROM COD FISH),2.005864863
+HERRING,1.137124466
+MACKEREL,1.035272146
+SAITHE,4.900359303
+NORTHERN PRAWN,14.44294447
+ALASKA POLLOCK,3.376893088
+RAINBOW TROUT,6.10321773
+PANGASIUS,13.86612846
+EUROPEAN PLAICE,23.28046736
+HOKI,7.148932597
+WHEAT,1.176855587
+RYE,1.062139839
+BARLEY,1.149947423
+OATS,1.184860243
+RICE,3.579564355
+RAPESEED/RAPESEED OIL,2.373003323
+OLIVE/OLIVE OIL,4.044846694
+SUGAR BEET/SUGAR,1.523165461
+TOMATO,1.493989349
+CUCUMBER,0.734100042
+BELL PEPPER,2.333728229
+ICEBERG LETTUCE,0.322647658
+POTATO,0.375638513
+CARROT,0.298370864
+ONION,0.381612481
+LEEK,0.395561437
+BROCCOLI,0.627874827
+WHITE CABBAGE,0.359012096
+CAULIFLOWER,0.531403532
+PEAS,0.617573225
+BEANS,1.159890391
+APPLE,0.36967267
+PEAR,0.399295468
+MELON,2.141240029
+BANANA,0.67261454
+ORANGE,0.728614353
+LEMON,0.45637194
+AVOCADO,1.093448343
+KIWIFRUIT,0.632535203
+STRAWBERRY,0.73858763
+RASPBERRY,0.759482
+COCOA POWDER,4.437154929
+COCOA BUTTER,8.786018448
+COFFEE,6.406229764
+PASTA,1.76571932
+BUNS,1.447764517
+BISCUITS,1.104275024
+PASTRY,1.409857661
+RUSKS,1.433832349
+WHEAT BREAD,1.02194756
+WHEAT-RYE BREAD,1.043072702
+CRISP BREAD,1.114347356
+FOLLOW-UP FORMULA,3.658963493
+MARGARINE,2.417283753
+LOW FAT MARGARINE,1.272289192
+COCOA DRINK POWDER,2.303386124
+SODA,0.40582548
+CIDER (NON-ALCOHOLIC),0.477932217
+BEER (REGULAR),0.461326355
+MINERAL WATER,0.277240578
+JUICE (AVERAGE),1.239805883
+ORANGE JUICE,1.687789075
+APPLE JUICE,0.791822691
+SQUASH DRINK (AVERAGE),1.27361569
+STRAWBERRY SQUASH DRINK,1.244180357
+RASPBERRY SQUASH DRINK,1.303051023
+MILK CHOCOLATE,6.856879104
+POTATO CRISPS,2.89291368
+ICE CREAM (DAIRY-BASED),4.281456556
