@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             StrictMode.setThreadPolicy(policy);
             //your codes here
             try {
-                FDC.getMenuItemID("vanilla ice cream");
+                FDC.getIngredients("vanilla ice cream");
             } catch (Exception e){
                 e.printStackTrace();
             }
