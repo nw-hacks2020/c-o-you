@@ -5,6 +5,8 @@ import android.os.StrictMode;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Arrays;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -21,7 +23,22 @@ public class MainActivity extends AppCompatActivity {
             StrictMode.setThreadPolicy(policy);
             //your codes here
             try {
-                FDC.getIngredients("vanilla ice cream");
+//                String[] ingredients = FDC.getIngredients("vanilla ice cream");
+//                System.out.println("INGREDIentSSS");
+//                System.out.println(Arrays.toString(ingredients));
+//                System.out.println("Apple Juice");
+//                System.out.println(NLP.getIngredients("Apple Juice"));
+//                System.out.println("Orange Juice");
+//                System.out.println(NLP.getIngredients("Orange Juice"));
+//                System.out.println("Coffee");
+//                System.out.println(NLP.getIngredients("Coffee"));
+//                System.out.println("Soda");
+//                System.out.println(NLP.getIngredients("Soda"));
+//                System.out.println("Mineral Water");
+//                System.out.println(NLP.getIngredients("Mineral Water"));
+
+
+
             } catch (Exception e){
                 e.printStackTrace();
             }

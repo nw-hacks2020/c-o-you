@@ -6,13 +6,14 @@ import org.json.simple.parser.JSONParser;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.io.SyncFailedException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Arrays;
 
 public class FDC {
 
-    public static void getIngredients(String term) throws Exception {
+    public static String[] getIngredients(String term) throws Exception {
         StringBuilder result = new StringBuilder();
         String formattedTerm = term.replaceAll(" ", "%20");
         URL url = new URL("https://api.nal.usda.gov/fdc/v1/search?api_key=uM2ndaOlQYzFPO74HfjZzoppSsnVoLL03Lw7BoAA&generalSearchInput=" + formattedTerm);
@@ -36,17 +37,32 @@ public class FDC {
             JSONParser parser = new JSONParser();
             JSONObject jsonObject = (JSONObject) parser.parse(response.toString());
             JSONArray foods = (JSONArray)jsonObject.get("foods");
-            JSONObject food = (JSONObject)foods.get(0);
+            int foodIndex = 0;
+            JSONObject food = (JSONObject)foods.get(foodIndex);
             String ingredients = (String)food.get("ingredients");
-
+            while (ingredients == null){
+                foodIndex++;
+                food = (JSONObject)foods.get(foodIndex);
+                ingredients = (String)food.get("ingredients");
+            }
+            System.out.println("ingredients");
+            System.out.println(term);
+            System.out.println(foods);
+            System.out.println(ingredients);
             String[] ingredientsArr = ingredients.split(", ");
-            String[] topIngredientsArr = Arrays.copyOfRange(ingredientsArr, 0, 5);
+            String[] topIngredientsArr;
+            if (ingredientsArr.length < 5) {
+                topIngredientsArr = Arrays.copyOfRange(ingredientsArr, 0, ingredientsArr.length);
+            } else {
+                topIngredientsArr = Arrays.copyOfRange(ingredientsArr, 0, 5);
+            }
 //            System.out.println("INGREDIENTSSS");
 //            System.out.println(ingredients);
 //            System.out.println(Arrays.toString(ingredientsArr));
 //            System.out.println(Arrays.toString(topIngredientsArr));
-            //print result
-            System.out.println(response.toString());
+            return topIngredientsArr;
+//            print result
+//            System.out.println(response.toString());
 
         }
     }
